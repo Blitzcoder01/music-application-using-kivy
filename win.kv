@@ -1,0 +1,77 @@
+<mainscreen>:
+    canvas.before:
+
+        Rectangle:
+            source: "/home/riya/Downloads/music-note.png"
+            pos: self.width/3,self.height/3
+            size: self.width/3,self.width/3
+    FloatLayout:
+        BoxLayout:
+
+            orientation: 'vertical'
+            pos:self.width/4,self.height/1.5
+            ImageButton:
+                text: "PREVIOUS"
+                source: "/home/riya/Downloads/back.png"
+                on_release:app.previous()
+
+
+            Label:
+                text:'PREVIOUS'
+                bold:True
+        BoxLayout:
+
+            orientation: 'vertical'
+            pos:self.width/0.5,self.height/1.5
+            ImageButton:
+                text: "PAUSE"
+                width:700
+                height:600
+                source: "/home/riya/Downloads/pause.png"
+                on_release:app.pause()
+
+            Label:
+                text:'PAUSE'
+                bold:True
+        BoxLayout:
+
+            orientation: 'vertical'
+            pos:self.width/0.27,self.height/1.5
+            ImageButton:
+                text: "PLAY"
+                source: "/home/riya/Downloads/play-button.png"
+                on_release:app.play()
+
+            Label:
+                text:'PLAY'
+                bold:  True
+
+        BoxLayout:
+
+            orientation: 'vertical'
+            pos:self.width/0.18,self.height/1.5
+            ImageButton:
+                text: "UNPAUSE"
+                source: "/home/riya/Downloads/unpause.png"
+                on_release:app.unpause()
+
+            Label:
+                text:'UNPAUSE'
+                bold: True
+
+
+        BoxLayout:
+
+            orientation: 'vertical'
+            pos:self.width/0.13,self.height/1.5
+
+            ImageButton:
+                text: "Next"
+                source: "/home/riya/Downloads/next.png"
+                on_release:app.next()
+
+            Label:
+
+                text:'NEXT'
+
+                bold: True
